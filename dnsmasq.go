@@ -33,7 +33,7 @@ import (
 
 var (
 	listen = flag.String("listen",
-		"localhost:9153",
+		"0.0.0.0:9153",
 		"listen address")
 
 	leasesPath = flag.String("leases_path",
@@ -41,7 +41,7 @@ var (
 		"path to the dnsmasq leases file")
 
 	dnsmasqAddr = flag.String("dnsmasq",
-		"localhost:53",
+		"0.0.0.0:53",
 		"dnsmasq host:port address")
 	metricsPath = flag.String("metrics_path",
 		"/metrics",
